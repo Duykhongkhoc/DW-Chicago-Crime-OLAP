@@ -1,0 +1,123 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e4e1e71c-90ab-4532-9920-5cc216d3694e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SOURCE DATA</ID>
+  <Name>SOURCE DATA</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>SOURCE DATA</DataSourceID>
+  <Schema>
+    <xs:schema id="SOURCE_x0020_DATA" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="SOURCE_x0020_DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6c6940a3-6e62-4ddb-afb2-e99a0a778259">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_CLEAN_DATA" msprop:design-time-name="b0d9aace-08ff-45ac-b756-29e528e6cb1c" msprop:DbTableName="CLEAN_DATA" msprop:FriendlyName="CLEAN_DATA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Case_Number" msprop:design-time-name="b21a59d7-6668-45d0-9eb1-b03d8df45612" msprop:DbColumnName="Case_Number" msprop:FriendlyName="Case_Number" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Date" msprop:design-time-name="fdb58a5d-d8ad-486c-9624-0b98fae91bc8" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Block" msprop:design-time-name="50896da2-15db-4a5a-8a7b-0f95094eb332" msprop:DbColumnName="Block" msprop:FriendlyName="Block" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IUCR" msprop:design-time-name="1a398178-d7d6-4bd5-a8b9-c73c915702af" msprop:DbColumnName="IUCR" msprop:FriendlyName="IUCR" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Primary_Type" msprop:design-time-name="6918ffe1-e69f-4345-8a39-216efd17e50f" msprop:DbColumnName="Primary_Type" msprop:FriendlyName="Primary_Type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Description" msprop:design-time-name="cb166b59-7a41-465c-8002-18d60fdcf0dc" msprop:DbColumnName="Description" msprop:FriendlyName="Description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Location_Description" msprop:design-time-name="d35502ff-9b39-4cd4-96d9-9c755533ad4c" msprop:DbColumnName="Location_Description" msprop:FriendlyName="Location_Description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Arrest" msprop:design-time-name="4b80d12a-f27a-4279-8a43-74241d311590" msprop:DbColumnName="Arrest" msprop:FriendlyName="Arrest" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="Domestic" msprop:design-time-name="bfe38844-ce9c-454a-a382-82be500716f8" msprop:DbColumnName="Domestic" msprop:FriendlyName="Domestic" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="Beat" msprop:design-time-name="feb8418f-dfb1-4fe8-bc0e-005dd65b6315" msprop:DbColumnName="Beat" msprop:FriendlyName="Beat" type="xs:int" minOccurs="0" />
+                  <xs:element name="District" msprop:design-time-name="58c91967-e11c-41a4-8300-a5bb76075007" msprop:DbColumnName="District" msprop:FriendlyName="District" type="xs:int" minOccurs="0" />
+                  <xs:element name="Ward" msprop:design-time-name="35d37051-ab72-4495-a60e-0bac511fe17b" msprop:DbColumnName="Ward" msprop:FriendlyName="Ward" type="xs:int" minOccurs="0" />
+                  <xs:element name="Community_Area" msprop:design-time-name="887092b3-a09a-47ab-96cd-548cfe0958e3" msprop:DbColumnName="Community_Area" msprop:FriendlyName="Community_Area" type="xs:int" minOccurs="0" />
+                  <xs:element name="FBI_Code" msprop:design-time-name="15693e68-c13b-460e-99e0-495637e6075c" msprop:DbColumnName="FBI_Code" msprop:FriendlyName="FBI_Code" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Location" msprop:design-time-name="846ed7dd-d25c-4dcf-877b-3f67ee61045a" msprop:DbColumnName="Location" msprop:FriendlyName="Location" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <SOURCE_x0020_DATA xmlns="" />
+  </Schema>
+</DataSourceView>

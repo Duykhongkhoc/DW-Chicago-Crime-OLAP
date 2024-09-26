@@ -1,0 +1,197 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ad4d80b2-35b9-4df6-bd51-9a13a4a40984" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NaiveBayes</ID>
+  <Name>NaiveBayes</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_CLEAN_DATA</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f5e3c88b-b2e7-47cb-84e1-526473452dd8">
+    <DataSourceViewID>SOURCE DATA</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7a83b2e3-ab01-4862-afe2-a60a3c8091f9">
+      <ID>Arrest</ID>
+      <Name>Arrest</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55fdcd31-ab2a-4242-8995-170274a07f28">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5c8520a-6583-4f8b-80bc-0b10561f290e">
+            <TableID>dbo_CLEAN_DATA</TableID>
+            <ColumnID>Arrest</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7ce86266-bb79-46f1-bc2b-5353ddd47058">
+      <ID>Case Number</ID>
+      <Name>Case Number</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e909c3a-980f-46bf-b6d0-0795994a6125">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ac63726-d095-4136-bbb2-9e257c918ced">
+            <TableID>dbo_CLEAN_DATA</TableID>
+            <ColumnID>Case_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d836d6b9-1bab-4147-bf71-65bc832a2586">
+      <ID>Community Area</ID>
+      <Name>Community Area</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee4fee5e-8687-498b-b2ed-764622425f08">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b26bc625-3012-4101-9d43-15421ea9abbc">
+            <TableID>dbo_CLEAN_DATA</TableID>
+            <ColumnID>Community_Area</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f37dd468-d671-4800-b3fb-26670c0a0752">
+      <ID>Domestic</ID>
+      <Name>Domestic</Name>
+      <Type>Boolean</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="074d39c8-61da-4471-aa08-04463814c17c">
+          <DataType>Boolean</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb1d10f3-e728-49ed-bec3-f0450e107393">
+            <TableID>dbo_CLEAN_DATA</TableID>
+            <ColumnID>Domestic</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eb99687a-b019-4a7c-9148-55817ee35494">
+      <ID>Location Description</ID>
+      <Name>Location Description</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b43ad2d-d6b2-4cf9-9144-ac55cacf087e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad25f9d5-e605-45e4-8b5e-41269c604131">
+            <TableID>dbo_CLEAN_DATA</TableID>
+            <ColumnID>Location_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="86225f50-c416-40ae-8f14-737f9fb191a9">
+      <ID>Primary Type</ID>
+      <Name>Primary Type</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="018cd85d-9c81-496d-89e4-f6e4d689cfe8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="067d8c66-87c9-46a8-a5f8-34a78d277c0b">
+            <TableID>dbo_CLEAN_DATA</TableID>
+            <ColumnID>Primary_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="273317b2-ebbd-418b-bd20-4ea1d1acacb0">
+      <ID>NaiveBayes</ID>
+      <Name>NaiveBayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="bdadc8e1-3fd7-41d9-9960-cd935530386a">
+          <ID>Arrest</ID>
+          <Name>Arrest</Name>
+          <SourceColumnID>Arrest</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="9ad2fec5-9c14-4227-b951-2d7e83e6709e">
+          <ID>Case Number</ID>
+          <Name>Case Number</Name>
+          <SourceColumnID>Case Number</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="4f43191c-141f-416b-8d2d-6192b30e7c56">
+          <ID>Community Area</ID>
+          <Name>Community Area</Name>
+          <SourceColumnID>Community Area</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8bfefe27-0c49-4d55-a7e3-185795851efc">
+          <ID>Domestic</ID>
+          <Name>Domestic</Name>
+          <SourceColumnID>Domestic</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f06f4895-db0a-4d47-aafa-02d33665103b">
+          <ID>Location Description</ID>
+          <Name>Location Description</Name>
+          <SourceColumnID>Location Description</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d534674c-f057-4da8-949c-a45cb820c0fc">
+          <ID>Primary Type</ID>
+          <Name>Primary Type</Name>
+          <SourceColumnID>Primary Type</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

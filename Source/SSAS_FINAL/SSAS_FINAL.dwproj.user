@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>WARE CRIME</Id>
+            <Name>WARE CRIME</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQxk33iubU0ior4oT/OGZaAAAAAAWAAAAVwBBAFIARQAgAEMAUgBJAE0ARQAAABBmAAAAAQAAIAAAACmVTxWV9rKybUQV7vVPa5XrlpdH+vXA2adF25UTO3RHAAAAAA6AAAAAAgAAIAAAAExbZ+fJfodO9yV+eqg3Vv9UC5eMEx2yPjBhXLJsdHEiEAAAAD3yCwxcDLhH68eiQSAL2SBAAAAAvhpf7pxTzBeIclfB7RR8EDSxyheqfMyjPmKXBDtPzEnXtefTmvWmI8Yi/LOQzPsGBc/L6vS1iI1uFoYcPIhM9g==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>WARE CRIME</Id>
+            <Name>WARE CRIME</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQxk33iubU0ior4oT/OGZaAAAAAAWAAAAVwBBAFIARQAgAEMAUgBJAE0ARQAAABBmAAAAAQAAIAAAAMtD9QX7Hrr2TSNVh9C/385ZlLrFedVfDnPHKNEUxciUAAAAAA6AAAAAAgAAIAAAAD5zMU8Ves/0AGXJjUc1lOPKqUNxp/b8T8ESXNqn+AktEAAAAPnoIBOe/+CcUp1REn0ewTRAAAAANPjwjA6qsy2/PpdBTQ+h1Vx8F1eip7Y7nY5EQeft36Evvd2f//KHBQEX1LOIqq7AuYvOCWHKpdQzw7ZF23M5fA==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-3790MCE</TargetServer>
+        <TargetDatabase>SSAS_FINAL</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

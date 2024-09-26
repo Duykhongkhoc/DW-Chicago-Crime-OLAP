@@ -1,0 +1,808 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DataMiningOLAP</ID>
+  <Name>DataMiningOLAP</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <MiningStructures>
+    <MiningStructure>
+      <ID>Association</ID>
+      <Name>Association</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_CLEAN_DATA</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9759" scrolltop="-3003" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23453" y="12192" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CLEAN_DATA" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3895" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000370f000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_CLEAN_DATA" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-9759</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-3003</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>SOURCE DATA</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Arrest</ID>
+          <Name>Arrest</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Arrest</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Case Number</ID>
+          <Name>Case Number</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Case_Number</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Community Area</ID>
+          <Name>Community Area</Name>
+          <Type>Long</Type>
+          <Content>Discretized</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Community_Area</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Domestic</ID>
+          <Name>Domestic</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Domestic</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Location Description</ID>
+          <Name>Location Description</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Location_Description</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Primary Type</ID>
+          <Name>Primary Type</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Primary_Type</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Association</ID>
+          <Name>Association</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Association_Rules</Algorithm>
+          <AlgorithmParameters>
+            <AlgorithmParameter>
+              <Name>MINIMUM_SUPPORT</Name>
+              <Value xsi:type="xsd:double">0.01</Value>
+            </AlgorithmParameter>
+          </AlgorithmParameters>
+          <Columns>
+            <Column>
+              <ID>Arrest</ID>
+              <Name>Arrest</Name>
+              <SourceColumnID>Arrest</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Case Number</ID>
+              <Name>Case Number</Name>
+              <SourceColumnID>Case Number</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Community Area</ID>
+              <Name>Community Area</Name>
+              <SourceColumnID>Community Area</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Domestic</ID>
+              <Name>Domestic</Name>
+              <SourceColumnID>Domestic</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Location Description</ID>
+              <Name>Location Description</Name>
+              <SourceColumnID>Location Description</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Primary Type</ID>
+              <Name>Primary Type</Name>
+              <SourceColumnID>Primary Type</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+    </MiningStructure>
+    <MiningStructure>
+      <ID>NaiveBayes</ID>
+      <Name>NaiveBayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_CLEAN_DATA</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9759" scrolltop="-3067" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23453" y="11134" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CLEAN_DATA" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3895" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000370f000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_CLEAN_DATA" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-9759</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-3067</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>SOURCE DATA</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Arrest</ID>
+          <Name>Arrest</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Arrest</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Case Number</ID>
+          <Name>Case Number</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Case_Number</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Community Area</ID>
+          <Name>Community Area</Name>
+          <Type>Long</Type>
+          <Content>Discretized</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Community_Area</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Domestic</ID>
+          <Name>Domestic</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Domestic</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Location Description</ID>
+          <Name>Location Description</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Location_Description</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Primary Type</ID>
+          <Name>Primary Type</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Primary_Type</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>NaiveBayes</ID>
+          <Name>NaiveBayes</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Arrest</ID>
+              <Name>Arrest</Name>
+              <SourceColumnID>Arrest</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Case Number</ID>
+              <Name>Case Number</Name>
+              <SourceColumnID>Case Number</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Community Area</ID>
+              <Name>Community Area</Name>
+              <SourceColumnID>Community Area</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Domestic</ID>
+              <Name>Domestic</Name>
+              <SourceColumnID>Domestic</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Location Description</ID>
+              <Name>Location Description</Name>
+              <SourceColumnID>Location Description</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Primary Type</ID>
+              <Name>Primary Type</Name>
+              <SourceColumnID>Primary Type</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+    </MiningStructure>
+    <MiningStructure>
+      <ID>DecisionTree</ID>
+      <Name>DecisionTree</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_CLEAN_DATA</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9759" scrolltop="-3067" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23453" y="11134" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CLEAN_DATA" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3895" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000370f000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_CLEAN_DATA" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-9759</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-3067</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>SOURCE DATA</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Arrest</ID>
+          <Name>Arrest</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Arrest</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Case Number</ID>
+          <Name>Case Number</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Case_Number</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Domestic</ID>
+          <Name>Domestic</Name>
+          <Type>Boolean</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Boolean</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Domestic</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Location Description</ID>
+          <Name>Location Description</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Location_Description</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Primary Type</ID>
+          <Name>Primary Type</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_CLEAN_DATA</TableID>
+                <ColumnID>Primary_Type</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>DecisionTree</ID>
+          <Name>DecisionTree</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Decision_Trees</Algorithm>
+          <Columns>
+            <Column>
+              <ID>Arrest</ID>
+              <Name>Arrest</Name>
+              <SourceColumnID>Arrest</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>Case Number</ID>
+              <Name>Case Number</Name>
+              <SourceColumnID>Case Number</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>Domestic</ID>
+              <Name>Domestic</Name>
+              <SourceColumnID>Domestic</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Location Description</ID>
+              <Name>Location Description</Name>
+              <SourceColumnID>Location Description</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Primary Type</ID>
+              <Name>Primary Type</Name>
+              <SourceColumnID>Primary Type</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+    </MiningStructure>
+  </MiningStructures>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>SOURCE DATA</ID>
+      <Name>SOURCE DATA</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLOLEDB.1;Data Source=KHUONGDUY\KHUONGDUYSQL2019;Password=;User ID=;Initial Catalog=SOURCE_DATA</ConnectionString>
+      <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>SOURCE DATA</ID>
+      <Name>SOURCE DATA</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>SOURCE DATA</DataSourceID>
+      <Schema>
+        <xs:schema id="SOURCE_x0020_DATA" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="SOURCE_x0020_DATA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6c6940a3-6e62-4ddb-afb2-e99a0a778259">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_CLEAN_DATA" msprop:design-time-name="b0d9aace-08ff-45ac-b756-29e528e6cb1c" msprop:FriendlyName="CLEAN_DATA" msprop:DbSchemaName="dbo" msprop:DbTableName="CLEAN_DATA" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Case_Number" msprop:design-time-name="b21a59d7-6668-45d0-9eb1-b03d8df45612" msprop:DbColumnName="Case_Number" msprop:FriendlyName="Case_Number" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Date" msprop:design-time-name="fdb58a5d-d8ad-486c-9624-0b98fae91bc8" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="Block" msprop:design-time-name="50896da2-15db-4a5a-8a7b-0f95094eb332" msprop:DbColumnName="Block" msprop:FriendlyName="Block" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="IUCR" msprop:design-time-name="1a398178-d7d6-4bd5-a8b9-c73c915702af" msprop:DbColumnName="IUCR" msprop:FriendlyName="IUCR" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Primary_Type" msprop:design-time-name="6918ffe1-e69f-4345-8a39-216efd17e50f" msprop:DbColumnName="Primary_Type" msprop:FriendlyName="Primary_Type" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Description" msprop:design-time-name="cb166b59-7a41-465c-8002-18d60fdcf0dc" msprop:DbColumnName="Description" msprop:FriendlyName="Description" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Location_Description" msprop:design-time-name="d35502ff-9b39-4cd4-96d9-9c755533ad4c" msprop:DbColumnName="Location_Description" msprop:FriendlyName="Location_Description" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Arrest" msprop:design-time-name="4b80d12a-f27a-4279-8a43-74241d311590" msprop:DbColumnName="Arrest" msprop:FriendlyName="Arrest" type="xs:boolean" minOccurs="0" />
+                      <xs:element name="Domestic" msprop:design-time-name="bfe38844-ce9c-454a-a382-82be500716f8" msprop:DbColumnName="Domestic" msprop:FriendlyName="Domestic" type="xs:boolean" minOccurs="0" />
+                      <xs:element name="Beat" msprop:design-time-name="feb8418f-dfb1-4fe8-bc0e-005dd65b6315" msprop:DbColumnName="Beat" msprop:FriendlyName="Beat" type="xs:int" minOccurs="0" />
+                      <xs:element name="District" msprop:design-time-name="58c91967-e11c-41a4-8300-a5bb76075007" msprop:DbColumnName="District" msprop:FriendlyName="District" type="xs:int" minOccurs="0" />
+                      <xs:element name="Ward" msprop:design-time-name="35d37051-ab72-4495-a60e-0bac511fe17b" msprop:DbColumnName="Ward" msprop:FriendlyName="Ward" type="xs:int" minOccurs="0" />
+                      <xs:element name="Community_Area" msprop:design-time-name="887092b3-a09a-47ab-96cd-548cfe0958e3" msprop:DbColumnName="Community_Area" msprop:FriendlyName="Community_Area" type="xs:int" minOccurs="0" />
+                      <xs:element name="FBI_Code" msprop:design-time-name="15693e68-c13b-460e-99e0-495637e6075c" msprop:DbColumnName="FBI_Code" msprop:FriendlyName="FBI_Code" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Location" msprop:design-time-name="846ed7dd-d25c-4dcf-877b-3f67ee61045a" msprop:DbColumnName="Location" msprop:FriendlyName="Location" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <SOURCE_x0020_DATA xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>
